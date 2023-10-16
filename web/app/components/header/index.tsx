@@ -6,7 +6,7 @@ import AppNav from './app-nav'
 import DatasetNav from './dataset-nav'
 import EnvNav from './env-nav'
 import ExploreNav from './explore-nav'
-import GithubStar from './github-star'
+// import GithubStar from './github-star'
 import PluginNav from './plugin-nav'
 import { WorkspaceProvider } from '@/context/workspace-context'
 import { useAppContext } from '@/context/app-context'
@@ -26,7 +26,7 @@ const Header = () => {
         <Link href="/apps" className='flex items-center mr-4'>
           <LogoSite />
         </Link>
-        <GithubStar />
+        {/* <GithubStar /> */}
       </div>
       <div className='flex items-center'>
         <ExploreNav className={navClassName} />
