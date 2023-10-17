@@ -77,7 +77,7 @@ cp -r ./public .next/standalone/.next/
 
 Finally, start the app:
 ```bash
-node .next/standalone/server.js 
+node .next/standalone/server.js
 ```
 
 If your project needs alternative port or hostname for listening, you can define PORT and HOSTNAME environment variables, before running server.js. For example, `PORT=3000 HOSTNAME=localhost node .next/standalone/server.js`.
@@ -86,7 +86,7 @@ If your project needs alternative port or hostname for listening, you can define
 If your IDE is VSCode, rename `web/.vscode/settings.example.json` to `web/.vscode/settings.json` for lint code setting.
 
 ## Documentation
-Visit https://docs.dify.ai/getting-started/readme to view the full documentation.
+Visit https://docs.xiaosuan.com/apps/getting-started/readme to view the full documentation.
 
 ## Community
 The Dify community can be found on [Discord community](https://discord.com/invite/FngNHpbcY7), where you can ask questions, voice ideas, and share your projects.

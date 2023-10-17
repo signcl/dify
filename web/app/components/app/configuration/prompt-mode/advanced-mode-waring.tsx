@@ -17,7 +17,7 @@ const AdvancedModeWarning: FC = () => {
           {/* TODO: Doc link */}
           {/* <a
             className='font-medium text-[#155EEF]'
-            href='https://docs.dify.ai/getting-started/readme'
+            href='https://docs.xiaosuan.com/apps/getting-started/readme'
             target='_blank'
           >
             {t('appDebug.promptMode.advancedWarning.learnMore')}

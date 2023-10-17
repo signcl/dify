@@ -12,7 +12,7 @@ def supported_language(lang):
 
 ## 添加多语言文件
 
-在 `web/i18n/lang` 下添加不同模块的多语言文件。文件命令为 模块名.{LANG}.ts。详细参考[LANG](https://www.venea.net/web/culture_code) 
+在 `web/i18n/lang` 下添加不同模块的多语言文件。文件命令为 模块名.{LANG}.ts。详细参考[LANG](https://www.venea.net/web/culture_code)
 
 ## 引入新添加的多语言文件
 在 `web/i18n/i18next-config.ts` 中 resources 对象中中引入新添加的多语言文件。如：
@@ -36,11 +36,11 @@ const resources = {
 
 ### 日期格式化的多语言处理
 
-目前日期做多语言格式化的文件涉及到如下 2 个: 
+目前日期做多语言格式化的文件涉及到如下 2 个:
 
 ```javascript
 1. web/app/components/header/account-setting/members-page/index.tsx
-// Line: 78 
+// Line: 78
 {dayjs(Number((account.last_login_at || account.created_at)) * 1000).locale(locale === 'zh-Hans' ? 'zh-cn' : 'en').fromNow()}
 2. web/app/components/develop/secret-key/secret-key-modal.tsx
 // Line：82
@@ -73,7 +73,7 @@ const formatDate = (timestamp: any) => {
 
 ## 验证
 
-新增语言包建议通过本地部署最新代码来验证，可参考：https://docs.dify.ai/getting-started/install-self-hosted/local-source-code
+新增语言包建议通过本地部署最新代码来验证，可参考：https://docs.xiaosuan.com/apps/getting-started/install-self-hosted/local-source-code
 验证点：
 1. 首次初始化安装是否存在新语言下拉选项，以及是否可以用新语言进行初始化
 2. 个人设置中是否存在新语言下拉选项，以及是否可以选择并保存新语言

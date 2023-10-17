@@ -6,7 +6,7 @@
   <a href="./README_ES.md">Español</a>
 </p>
 
-#### [Website](https://dify.ai) • [Docs](https://docs.dify.ai) • [Deployment Docs](https://docs.dify.ai/getting-started/install-self-hosted) •  [FAQ](https://docs.dify.ai/getting-started/faq) • [Twitter](https://twitter.com/dify_ai) • [Discord](https://discord.gg/FngNHpbcY7)
+#### [Website](https://dify.ai) • [Docs](https://docs.dify.ai) • [Deployment Docs](https://docs.xiaosuan.com/apps/getting-started/install-self-hosted) •  [FAQ](https://docs.xiaosuan.com/apps/getting-started/faq) • [Twitter](https://twitter.com/dify_ai) • [Discord](https://discord.gg/FngNHpbcY7)
 
 **Dify** is an easy-to-use LLMOps platform designed to empower more people to create sustainable, AI-native applications. With visual orchestration for various application types, Dify offers out-of-the-box, ready-to-use applications that can also serve as Backend-as-a-Service APIs. Unify your development process with one API for plugins and datasets integration, and streamline your operations using a single interface for prompt engineering, visual analytics, and continuous improvement.
 
@@ -23,7 +23,7 @@ https://github.com/langgenius/dify/assets/100913391/f6e658d5-31b3-4c16-a0af-9e19
 ## Highlighted Features
 **1. LLMs support:** Choose capabilities based on different models when building your Dify AI apps. Dify is compatible with Langchain, meaning it will support various LLMs. Currently supported:
 
-- [x] **OpenAI**: GPT4, GPT3.5-turbo, GPT3.5-turbo-16k, text-davinci-003 
+- [x] **OpenAI**: GPT4, GPT3.5-turbo, GPT3.5-turbo-16k, text-davinci-003
 - [x] **Azure OpenAI Service**
 - [x] **Anthropic**: Claude2, Claude-instant
 - [x] **Replicate**
@@ -40,7 +40,7 @@ We provide the following free resources for registered Dify cloud users (sign up
 * 600,000 free Claude model tokens to build Claude-powered apps
 * 200 free OpenAI queries to build OpenAI-based apps
 
-  
+
 **2. Visual orchestration:** Build an AI app in minutes by writing and debugging prompts visually.
 
 **3. Text embedding:** Fully automated text preprocessing embeds your data as context without complex concepts. Supports PDF, TXT, and syncing data from Notion, webpages, APIs.
@@ -54,9 +54,9 @@ We provide the following free resources for registered Dify cloud users (sign up
 **7. Data labeling and improvement:**  Visually inspect AI app logs and improve data via labeling. Observe the AI's reasoning process to continuously enhance performance. (Coming soon)
 
 ## Use cases
-* [Create an AI ChatBot with Business Data in Minutes.](https://docs.dify.ai/use-cases/create-an-ai-chatbot-with-business-data-in-minutes)
-* [How to Build an Notion AI Assistant Based on Your Own Notes?](https://docs.dify.ai/use-cases/build-an-notion-ai-assistant)
-* [Create a Midjoureny Prompt Bot Without Code in Just a Few Minutes.](https://docs.dify.ai/use-cases/create-a-midjoureny-prompt-bot-with-dify)
+* [Create an AI ChatBot with Business Data in Minutes.](https://docs.xiaosuan.com/apps/use-cases/create-an-ai-chatbot-with-business-data-in-minutes)
+* [How to Build an Notion AI Assistant Based on Your Own Notes?](https://docs.xiaosuan.com/apps/use-cases/build-an-notion-ai-assistant)
+* [Create a Midjoureny Prompt Bot Without Code in Just a Few Minutes.](https://docs.xiaosuan.com/apps/use-cases/create-a-midjoureny-prompt-bot-with-dify)
 
 ## Use Cloud Services
 
@@ -98,7 +98,7 @@ Features under development:
 - **Datasets**, supporting more datasets, e.g. syncing content from Notion or webpages
 We will support more datasets, including text, webpages, and even Notion content. Users can build AI applications based on their own data sources.
 - **Plugins**, introducing ChatGPT Plugin-standard plugins for applications, or using Dify-produced plugins
-We will release plugins complying with ChatGPT standard, or Dify's own plugins to enable more capabilities in applications. 
+We will release plugins complying with ChatGPT standard, or Dify's own plugins to enable more capabilities in applications.
 
 
 ## Q&A
@@ -124,29 +124,29 @@ A: English and Chinese are currently supported, and you can contribute language 
 [![Star History Chart](https://api.star-history.com/svg?repos=langgenius/dify&type=Date)](https://star-history.com/#langgenius/dify&Date)
 
 
-## Contributing 
+## Contributing
 
 We welcome you to contribute to Dify to help make Dify better. We welcome contributions in various ways, submitting code, issues, new ideas, or sharing the interesting and useful AI applications you have created based on Dify. At the same time, we also welcome you to share Dify at different events, conferences, and social media.
 
-### Submit a Pull Request 
+### Submit a Pull Request
 
-To ensure proper review, all code contributions, including from contributors with direct commit access, must be submitted as PR requests and approved by core developers before merging branches. 
-We welcome PRs from everyone! If you're willing to help out, you can learn more about how to contribute code to the project in the [Contribution Guide](CONTRIBUTING.md).  
+To ensure proper review, all code contributions, including from contributors with direct commit access, must be submitted as PR requests and approved by core developers before merging branches.
+We welcome PRs from everyone! If you're willing to help out, you can learn more about how to contribute code to the project in the [Contribution Guide](CONTRIBUTING.md).
 
-### Submit issues or ideas  
+### Submit issues or ideas
 
-You can submit your issues or ideas by adding issues to the Dify repository. If you encounter issues, please describe the steps you took to encounter the issue as much as possible so we can better discover it. If you have any new ideas for our product, we also welcome your feedback. Please share your insights as much as possible so we can get more feedback and further discussion in the community.  
+You can submit your issues or ideas by adding issues to the Dify repository. If you encounter issues, please describe the steps you took to encounter the issue as much as possible so we can better discover it. If you have any new ideas for our product, we also welcome your feedback. Please share your insights as much as possible so we can get more feedback and further discussion in the community.
 
 ### Share your applications
 
-We encourage all community members to share their AI applications built on Dify, which can be applied to different scenarios or different users. This will provide powerful inspiration for people who want to create AI capabilities! You can share your experience by [submitting an issue in the Dify-user-case repository](https://github.com/langgenius/dify-user-case/issues).  
+We encourage all community members to share their AI applications built on Dify, which can be applied to different scenarios or different users. This will provide powerful inspiration for people who want to create AI capabilities! You can share your experience by [submitting an issue in the Dify-user-case repository](https://github.com/langgenius/dify-user-case/issues).
 
 ### Share Dify with others
 
 We encourage community contributors to actively demonstrate different aspects of using Dify. You can talk or share any feature of using Dify at  meetups and conferences, blogs or social media. We believe your unique sharing will be of great help to others!  Mention @Dify.AI on Twitter and/or communicate on [Discord](https://discord.gg/FngNHpbcY7) so we can give pointers and tips and help you spread the word by promoting your content on the different Dify communication channels.
 
-### Help others 
-You can also help people in need of help on Discord, GitHub issues or other social platforms, guide others to solve problems encountered during use and share usage experiences. This is also a great contribution! If you want to become a maintainer of the Dify community, please contact the official team via [Discord](https://discord.gg/FngNHpbcY7) or email us at support@dify.ai. 
+### Help others
+You can also help people in need of help on Discord, GitHub issues or other social platforms, guide others to solve problems encountered during use and share usage experiences. This is also a great contribution! If you want to become a maintainer of the Dify community, please contact the official team via [Discord](https://discord.gg/FngNHpbcY7) or email us at support@dify.ai.
 
 
 ## Contact Us

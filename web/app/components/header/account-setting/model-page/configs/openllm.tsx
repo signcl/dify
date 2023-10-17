@@ -23,8 +23,8 @@ const config: ProviderConfig = {
       },
       link: {
         href: {
-          'en': 'https://docs.dify.ai/getting-started/install-self-hosted',
-          'zh-Hans': 'https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted',
+          'en': 'https://docs.xiaosuan.com/apps/getting-started/install-self-hosted',
+          'zh-Hans': 'https://docs.xiaosuan.com/apps/v/zh-hans/getting-started/install-self-hosted',
         },
         label: {
           'en': 'community open-source version',

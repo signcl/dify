@@ -7,7 +7,7 @@
 </p>
 
 
-####  [官方网站](https://dify.ai) •  [使用文档](https://docs.dify.ai/v/zh-hans)  · [部署文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted)  ·  [FAQ](https://docs.dify.ai/v/zh-hans/getting-started/faq) • [Twitter](https://twitter.com/dify_ai) •  [Discord](https://discord.gg/FngNHpbcY7)
+####  [官方网站](https://dify.ai) •  [使用文档](https://docs.xiaosuan.com/apps/v/zh-hans)  · [部署文档](https://docs.xiaosuan.com/apps/v/zh-hans/getting-started/install-self-hosted)  ·  [FAQ](https://docs.xiaosuan.com/apps/v/zh-hans/getting-started/faq) • [Twitter](https://twitter.com/dify_ai) •  [Discord](https://discord.gg/FngNHpbcY7)
 
 **Dify** 是一个易用的 LLMOps 平台，基于不同的大型语言模型能力，让更多人可以简易地创建可持续运营的原生 AI 应用。Dify 提供多种类型应用的可视化编排，应用可开箱即用，也能以“后端即服务”的 API 提供服务。
 
@@ -22,7 +22,7 @@ https://github.com/langgenius/dify/assets/100913391/f6e658d5-31b3-4c16-a0af-9e19
 ## 核心能力
 1. **模型支持：** 你可以在 Dify 上选择基于不同模型的能力来开发你的 AI 应用。Dify 兼容 Langchain，这意味着我们将逐步支持多种 LLMs ，目前支持的模型供应商：
 
-- [x] **OpenAI**：GPT4、GPT3.5-turbo、GPT3.5-turbo-16k、text-davinci-003 
+- [x] **OpenAI**：GPT4、GPT3.5-turbo、GPT3.5-turbo-16k、text-davinci-003
 - [x] **Azure OpenAI Service**
 - [x] **Anthropic**：Claude2、Claude-instant
 - [x] **Replicate**
@@ -48,9 +48,9 @@ https://github.com/langgenius/dify/assets/100913391/f6e658d5-31b3-4c16-a0af-9e19
 6. **数据标注与改进：** 可视化查阅 AI 应用日志并对数据进行改进标注，观测 AI 的推理过程，不断提高其性能。（Coming soon）
  -----------------------------
  ## Use cases
- * [几分钟创建一个带有业务数据的官网 AI 智能客服](https://docs.dify.ai/v/zh-hans/use-cases/create-an-ai-chatbot-with-business-data-in-minutes)
- * [构建一个 Notion AI 助手](https://docs.dify.ai/v/zh-hans/use-cases/build-an-notion-ai-assistant)
- * [创建 Midjoureny 提示词机器人](https://docs.dify.ai/v/zh-hans/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code)
+ * [几分钟创建一个带有业务数据的官网 AI 智能客服](https://docs.xiaosuan.com/apps/v/zh-hans/use-cases/create-an-ai-chatbot-with-business-data-in-minutes)
+ * [构建一个 Notion AI 助手](https://docs.xiaosuan.com/apps/v/zh-hans/use-cases/build-an-notion-ai-assistant)
+ * [创建 Midjoureny 提示词机器人](https://docs.xiaosuan.com/apps/v/zh-hans/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code)
 
 
 ## 使用云服务
