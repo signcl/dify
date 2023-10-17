@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="dify-client",
+    name="openbayes-client",
     version="0.1.8",
-    author="Dify",
-    author_email="hello@dify.ai",
-    description="A package for interacting with the Dify Service-API",
+    author="OpenBayes",
+    author_email="hi@openbayes.com",
+    description="A package for interacting with the OpenBayes Service-API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/langgenius/dify",
+    url="https://github.com/signcl/dify",
     license='MIT',
     packages=['dify_client'],
     classifiers=[

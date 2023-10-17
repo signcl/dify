@@ -1,11 +1,9 @@
-import decimal
 import logging
 from typing import List, Optional, Any
 
 import openai
 from langchain.callbacks.manager import Callbacks
 from langchain.schema import LLMResult
-from openai import api_requestor
 
 from core.model_providers.providers.base import BaseModelProvider
 from core.third_party.langchain.llms.chat_open_ai import EnhanceChatOpenAI
@@ -13,7 +11,7 @@ from core.model_providers.error import LLMBadRequestError, LLMAPIConnectionError
     LLMRateLimitError, LLMAuthorizationError, ModelCurrentlyNotSupportError
 from core.third_party.langchain.llms.open_ai import EnhanceOpenAI
 from core.model_providers.models.llm.base import BaseLLM
-from core.model_providers.models.entity.message import PromptMessage, MessageType
+from core.model_providers.models.entity.message import PromptMessage
 from core.model_providers.models.entity.model_params import ModelMode, ModelKwargs
 from models.provider import ProviderType, ProviderQuotaType
 
@@ -49,7 +47,7 @@ class OpenAIModel(BaseLLM):
             self.model_mode = ModelMode.COMPLETION
         else:
             self.model_mode = ModelMode.CHAT
-        
+
         # TODO load price config from configs(db)
         super().__init__(model_provider, name, model_kwargs, streaming, callbacks)
 
@@ -103,7 +101,7 @@ class OpenAIModel(BaseLLM):
         if self.name == 'gpt-4' \
                 and self.model_provider.provider.provider_type == ProviderType.SYSTEM.value \
                 and self.model_provider.provider.quota_type == ProviderQuotaType.TRIAL.value:
-            raise ModelCurrentlyNotSupportError("Dify Hosted OpenAI GPT-4 currently not support.")
+            raise ModelCurrentlyNotSupportError("OpenBayes Hosted OpenAI GPT-4 currently not support.")
 
         prompts = self._get_prompt_from_messages(messages)
 

@@ -29,7 +29,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 }
 
 export const metadata = {
-  title: 'Dify',
+  title: 'OpenBayes',
 }
 
 export default Layout
