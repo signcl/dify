@@ -18,15 +18,16 @@ def handle(sender, **kwargs):
                 return
 
             # generate conversation name
-            try:
-                name = LLMGenerator.generate_conversation_name(app_model.tenant_id, message.query, message.answer)
+            # try:
+            #     name = LLMGenerator.generate_conversation_name(app_model.tenant_id, message.query, message.answer)
 
-                if len(name) > 75:
-                    name = name[:75] + '...'
+            #     if len(name) > 75:
+            #         name = name[:75] + '...'
 
-                conversation.name = name
-            except:
-                conversation.name = 'New conversation'
+            #     conversation.name = name
+            # except:
+            #     conversation.name = 'New conversation'
+            conversation.name = 'New conversation'
 
             db.session.add(conversation)
             db.session.commit()

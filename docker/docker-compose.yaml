@@ -2,13 +2,13 @@ version: '3.1'
 services:
   # API service
   api:
-    image: langgenius/dify-api:0.3.28
+    image: langgenius/dify-api:a45fc8ae59efa2883adff8c39cd716c109d1882c
     restart: always
     environment:
       # Startup mode, 'api' starts the API server.
       MODE: api
       # The log level for the application. Supported values are `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`
-      LOG_LEVEL: INFO
+      LOG_LEVEL: DEBUG
       # A secret key that is used for securely signing the session cookie and encrypting sensitive information on the database. You can generate a strong key using `openssl rand -base64 42`.
       SECRET_KEY: sk-9f73s3ljTXVcMT3Blb3ljTqtsKiGHXVcMT3BlbkFJLK7U
       # The base URL of console application web frontend, refers to the Console base URL of WEB service if console domain is
@@ -79,7 +79,7 @@ services:
       S3_SECRET_KEY: 'sk-difyai'
       S3_REGION: 'us-east-1'
       # The type of vector store to use. Supported values are `weaviate`, `qdrant`, `milvus`.
-      VECTOR_STORE: weaviate
+      VECTOR_STORE: qdrant
       # The Weaviate endpoint URL. Only available when VECTOR_STORE is `weaviate`.
       WEAVIATE_ENDPOINT: http://weaviate:8080
       # The Weaviate API key.
@@ -124,16 +124,17 @@ services:
   # worker service
   # The Celery worker for processing the queue.
   worker:
-    image: langgenius/dify-api:0.3.28
+    image: langgenius/dify-api:a45fc8ae59efa2883adff8c39cd716c109d1882c
     restart: always
     environment:
       # Startup mode, 'worker' starts the Celery worker for processing the queue.
       MODE: worker
+      CELERY_WORKER_AMOUNT: 4
 
       # --- All the configurations below are the same as those in the 'api' service. ---
 
       # The log level for the application. Supported values are `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`
-      LOG_LEVEL: INFO
+      LOG_LEVEL: DEBUG
       # A secret key that is used for securely signing the session cookie and encrypting sensitive information on the database. You can generate a strong key using `openssl rand -base64 42`.
       # same as the API service
       SECRET_KEY: sk-9f73s3ljTXVcMT3Blb3ljTqtsKiGHXVcMT3BlbkFJLK7U
@@ -157,7 +158,7 @@ services:
       STORAGE_TYPE: local
       STORAGE_LOCAL_PATH: storage
       # The type of vector store to use. Supported values are `weaviate`, `qdrant`, `milvus`.
-      VECTOR_STORE: weaviate
+      VECTOR_STORE: qdrant
       # The Weaviate endpoint URL. Only available when VECTOR_STORE is `weaviate`.
       WEAVIATE_ENDPOINT: http://weaviate:8080
       # The Weaviate API key.
@@ -192,10 +193,11 @@ services:
 
   # Frontend web application.
   web:
-    image: langgenius/dify-web:0.3.28
+    image: langgenius/dify-web:a45fc8ae59efa2883adff8c39cd716c109d1882c
     restart: always
     environment:
       EDITION: SELF_HOSTED
+      SITE_ABOUT: hide
       # The base URL of console application api server, refers to the Console base URL of WEB service if console domain is
       # different from api or web app domain.
       # example: http://cloud.dify.ai
@@ -206,6 +208,8 @@ services:
       APP_API_URL: ''
       # The DSN for Sentry error reporting. If not set, Sentry error reporting will be disabled.
       SENTRY_DSN: ''
+    volumes:
+      - ./dify-assets:/app/web/public/logo
 #    uncomment to expose dify-web port to host
 #    ports:
 #      - "3000:3000"
@@ -275,16 +279,16 @@ services:
 #  uncomment to use qdrant as vector store.
 #  (if uncommented, you need to comment out the weaviate service above,
 #  and set VECTOR_STORE to qdrant in the api & worker service.)
-#  qdrant:
-#    image: qdrant/qdrant:latest
-#    restart: always
-#    volumes:
-#      - ./volumes/qdrant:/qdrant/storage
-#    environment:
-#      QDRANT__API_KEY: 'difyai123456'
+  qdrant:
+    image: qdrant/qdrant:latest
+    restart: always
+    volumes:
+      - ./volumes/qdrant:/qdrant/storage
+    environment:
+      QDRANT__API_KEY: 'difyai123456'
 ##    uncomment to expose qdrant port to host
-##    ports:
-##      - "6333:6333"
+    ports:
+      - "6333:6333"
 
   # The nginx reverse proxy.
   # used for reverse proxying the API service and Web service.
@@ -298,4 +302,4 @@ services:
       - api
       - web
     ports:
-      - "80:80"
+      - "30019:80"
