@@ -41,40 +41,40 @@ class OpenAIProvider(BaseModelProvider):
                         ModelFeature.AGENT_THOUGHT.value
                     ]
                 },
-                {
-                    'id': 'gpt-3.5-turbo-instruct',
-                    'name': 'GPT-3.5-Turbo-Instruct',
-                    'mode': ModelMode.COMPLETION.value,
-                },
-                {
-                    'id': 'gpt-3.5-turbo-16k',
-                    'name': 'gpt-3.5-turbo-16k',
-                    'mode': ModelMode.CHAT.value,
-                    'features': [
-                        ModelFeature.AGENT_THOUGHT.value
-                    ]
-                },
-                {
-                    'id': 'gpt-4',
-                    'name': 'gpt-4',
-                    'mode': ModelMode.CHAT.value,
-                    'features': [
-                        ModelFeature.AGENT_THOUGHT.value
-                    ]
-                },
-                {
-                    'id': 'gpt-4-32k',
-                    'name': 'gpt-4-32k',
-                    'mode': ModelMode.CHAT.value,
-                    'features': [
-                        ModelFeature.AGENT_THOUGHT.value
-                    ]
-                },
-                {
-                    'id': 'text-davinci-003',
-                    'name': 'text-davinci-003',
-                    'mode': ModelMode.COMPLETION.value,
-                }
+                # {
+                #     'id': 'gpt-3.5-turbo-instruct',
+                #     'name': 'GPT-3.5-Turbo-Instruct',
+                #     'mode': ModelMode.COMPLETION.value,
+                # },
+                # {
+                #     'id': 'gpt-3.5-turbo-16k',
+                #     'name': 'gpt-3.5-turbo-16k',
+                #     'mode': ModelMode.CHAT.value,
+                #     'features': [
+                #         ModelFeature.AGENT_THOUGHT.value
+                #     ]
+                # },
+                # {
+                #     'id': 'gpt-4',
+                #     'name': 'gpt-4',
+                #     'mode': ModelMode.CHAT.value,
+                #     'features': [
+                #         ModelFeature.AGENT_THOUGHT.value
+                #     ]
+                # },
+                # {
+                #     'id': 'gpt-4-32k',
+                #     'name': 'gpt-4-32k',
+                #     'mode': ModelMode.CHAT.value,
+                #     'features': [
+                #         ModelFeature.AGENT_THOUGHT.value
+                #     ]
+                # },
+                # {
+                #     'id': 'text-davinci-003',
+                #     'name': 'text-davinci-003',
+                #     'mode': ModelMode.COMPLETION.value,
+                # }
             ]
 
             if self.provider.provider_type == ProviderType.SYSTEM.value \
