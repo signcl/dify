@@ -1,9 +1,9 @@
 const translation = {
   welcome: {
     firstStepTip: 'To get started,',
-    enterKeyTip: 'enter your OpenAI API Key below',
-    getKeyTip: 'Get your API Key from OpenAI dashboard',
-    placeholder: 'Your OpenAI API Key(eg.sk-xxxx)',
+    enterKeyTip: 'enter your Xiaosuan API Key below',
+    getKeyTip: 'Get your API Key from Xiaosuan dashboard',
+    placeholder: 'Your Xiaosuan API Key(eg.sk-xxxx)',
   },
   apiKeyInfo: {
     cloud: {

@@ -6,8 +6,8 @@ import { IS_CE_EDITION } from '@/config'
 const config: ProviderConfig = {
   selector: {
     name: {
-      'en': 'OpenAI',
-      'zh-Hans': 'OpenAI',
+      'en': 'Xiaosuan',
+      'zh-Hans': '小算',
     },
     icon: <OpenaiBlack className='w-full h-full' />,
   },
@@ -19,23 +19,23 @@ const config: ProviderConfig = {
     },
     subTitleIcon: <OpenaiBlack className='w-6 h-6' />,
     desc: {
-      'en': 'Models provided by OpenAI, such as GPT-3.5-Turbo and GPT-4.',
-      'zh-Hans': 'OpenAI 提供的模型，例如 GPT-3.5-Turbo 和 GPT-4。',
+      'en': 'Models provided by OpenBayes, such as Thomas-1.',
+      'zh-Hans': 'OpenBayes 提供的模型，例如 Thomas-1。',
     },
     bgColor: 'bg-gray-200',
   },
   modal: {
     key: ProviderEnum.openai,
     title: {
-      'en': 'OpenAI',
-      'zh-Hans': 'OpenAI',
+      'en': 'Xiaosuan',
+      'zh-Hans': '小算',
     },
     icon: <OpenaiTransparent className='w-6 h-6' />,
     link: {
-      href: 'https://platform.openai.com/account/api-keys',
+      href: 'https://platform.xiaosuan.com/account/api-keys',
       label: {
-        'en': 'Get your API key from OpenAI',
-        'zh-Hans': '从 OpenAI 获取 API Key',
+        'en': 'Get your API key from Xiaosuan',
+        'zh-Hans': '从小算获取 API Key',
       },
     },
     validateKeys: ['openai_api_key'],

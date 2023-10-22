@@ -1,9 +1,9 @@
 const translation = {
   welcome: {
     firstStepTip: '开始之前,',
-    enterKeyTip: '请先在下方输入你的 OpenAI API Key',
-    getKeyTip: '从 OpenAI 获取你的 API Key',
-    placeholder: '你的 OpenAI API Key（例如 sk-xxxx）',
+    enterKeyTip: '请先在下方输入你的小算 API Key',
+    getKeyTip: '从小算获取你的 API Key',
+    placeholder: '你的小算 API Key（例如 sk-xxxx）',
   },
   apiKeyInfo: {
     cloud: {

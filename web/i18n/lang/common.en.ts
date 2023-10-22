@@ -173,7 +173,7 @@ const translation = {
   provider: {
     apiKey: 'API Key',
     enterYourKey: 'Enter your API key here',
-    invalidKey: 'Invalid OpenAI API key',
+    invalidKey: 'Invalid Xiaosuan API key',
     validatedError: 'Validation failed: ',
     validating: 'Validating key...',
     saveFailed: 'Save api key failed',
@@ -333,12 +333,7 @@ const translation = {
     notAllow: 'microphone not authorized',
   },
   modelName: {
-    'gpt-3.5-turbo': 'GPT-3.5-Turbo',
-    'gpt-3.5-turbo-16k': 'GPT-3.5-Turbo-16K',
-    'gpt-4': 'GPT-4',
-    'gpt-4-32k': 'GPT-4-32K',
-    'text-davinci-003': 'Text-Davinci-003',
-    'text-embedding-ada-002': 'Text-Embedding-Ada-002',
+    'gpt-3.5-turbo': 'Xiaosuan-Zhaoshang',
     'whisper-1': 'Whisper-1',
     'claude-instant-1': 'Claude-Instant',
     'claude-2': 'Claude-2',
